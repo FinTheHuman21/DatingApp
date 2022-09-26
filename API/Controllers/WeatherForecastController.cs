@@ -1,9 +1,10 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace API.Controllers;
-
-[ApiController]
-[Route("[controller]")]
+namespace API.Controllers
+{
+    
+    [ApiController]
+    [Route("[controller]")]
 public class WeatherForecastController : ControllerBase
 {
     private static readonly string[] Summaries = new[]
@@ -29,4 +30,6 @@ public class WeatherForecastController : ControllerBase
         })
         .ToArray();
     }
+}
+
 }
