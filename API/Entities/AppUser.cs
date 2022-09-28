@@ -11,6 +11,7 @@ namespace API.Entities
 
         public string UserName { get; set; }
 
-        private int myVar;
+        public byte[] PasswordHash {get; set; }
+        public byte[] PasswordSalt {get; set; }
     }
 }
